@@ -1,5 +1,4 @@
 version: '3'
-
 services:
   proxy:
     image: staticfloat/nginx-certbot
@@ -9,8 +8,8 @@ services:
     ports:
       - 80:80
       - 443:443
-      volumes:
-        - ./conf.d:/etc/nginx/user.conf.d:ro
-        - letsencrypt:/etc/letsencrypt
+    volumes:
+      - ./conf.d:/etc/nginx/user.conf.d:ro
+      - letsencrypt:/etc/letsencrypt
 volumes:
   letsencrypt:
