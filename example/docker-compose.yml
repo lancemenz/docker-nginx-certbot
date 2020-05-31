@@ -5,7 +5,7 @@ services:
     image: staticfloat/nginx-certbot
     restart: always
     environment:
-      CERTBOT_EMAIL: "your.email@example.com"
+      CERTBOT_EMAIL: "lancemenz0099@gmail.com"
     ports:
       - "80:80"
       - "443:443"
